@@ -1,0 +1,189 @@
+---
+layout: "base.html"
+description: "Meta description for the page"
+metaTitle: "Title that shows up on social OG tags"
+tagTitle: "New Construction Services"
+preloadImg: "/images/landing_new.jpg"
+preloadCSS: "/css/services.css"
+permalink: "new-construction/"
+eleventyNavigation:
+parent: Services
+key: New Construction
+order: 1000
+---
+
+<!-- ============================================ -->
+<!--                 Content Page                 -->
+<!-- ============================================ -->
+
+<!-- ============================================ 
+    This Stitch is used for content heavy interior pages
+    that have no design or layout.  Often times these are 
+    content silos where you talk extensively about a topic
+    to educate your visitors and rank on Google for the 
+    content.  These are great for pages that have a TON
+    of content.  Design isn't important here, it's all 
+    about making the content accessible and easy to read.
+================================================= -->
+
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-1401">
+  <div class="cs-container">
+    <span class="cs-int-title">New Construction</span>
+    <div class="cs-breadcrumbs" style="font-weight: bold">
+      <a href="/" class="cs-link">Home</a>
+      <a href="" class="cs-link cs-active">New Construction</a>
+    </div>
+  </div>
+  <!--Background Image-->
+  {% image './src/images/landing_new.jpg', 'New construction project showcase', 'cs-background', 'eager', '(max-width: 600px) 600px, 1280px'%}
+  </picture>
+</div>
+
+<section id="content-page-1401">
+  <div class="cs-container">
+    <div class="cs-image-group">
+      <div class="cs-flex">
+        <picture class="cs-background">
+          <!--Mobile Image-->
+          {% image './src/images/company/construction_4.png', 'Professional construction project', '', 'lazy', '(max-width: 600px) 542px, 728px'%}
+        </picture>
+        <div class="cs-box">
+          <img
+            class="cs-box-icon"
+            loading="lazy"
+            decoding="async"
+            src="/assets/svgs/check.svg"
+            alt="check icon"
+            width="60"
+            height="60"
+          />
+          <span class="cs-desc">25+ Years of Construction Excellence</span>
+        </div>
+      </div>
+      <ul class="cs-card-group">
+        <li class="cs-item">
+          <h3 class="cs-h3">
+            <img
+              class="cs-h3-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="/assets/svgs/check.svg"
+              alt="icon"
+              width="32"
+              height="32"
+            />
+            Expert Craftsmanship
+          </h3>
+          <p class="cs-item-text">
+            Professional construction services delivered by skilled craftsmen with attention to detail.
+          </p>
+        </li>
+        <li class="cs-item">
+          <h3 class="cs-h3">
+            <img
+              class="cs-h3-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="/assets/svgs/check.svg"
+              alt="icon"
+              width="32"
+              height="32"
+            />
+            Quality Materials
+          </h3>
+          <p class="cs-item-text">
+            We use only premium-grade materials to ensure durability and long-lasting results.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="cs-content">
+      <h1 class="cs-title">
+        Building Your Vision:
+        <span class="cs-color">New Construction Excellence</span>
+      </h1>
+      <h2>Why Choose Our New Construction Services</h2>
+      <p>
+        When it comes to new construction, experience and expertise matter. Our team brings over two decades of construction knowledge to every project, ensuring your vision becomes reality. From residential builds to commercial developments, we handle every aspect with precision and professionalism.
+      </p>
+      <p>
+        We pride ourselves on transparent communication, detailed project planning, and strict adherence to timelines and budgets. Our comprehensive approach means you get a seamless construction experience from foundation to finishing touches.
+      </p>
+      <ol>
+        <li>
+          Comprehensive project management from start to finish
+        </li>
+        <li>Expert coordination with architects and subcontractors</li>
+        <li>Strict quality control and safety standards</li>
+      </ol>
+      <h4>What Our New Construction Service Includes</h4>
+      <ul>
+        <li>Detailed project planning and timeline development</li>
+        <li>Professional construction team and site management</li>
+        <li>Quality material sourcing and procurement</li>
+        <li>Regular progress updates and communication</li>
+      </ul>
+    </div>
+  </div>
+  <div class="cs-bubbles" aria-hidden="true"></div>
+</section>
+
+<!-- ============================================ -->
+<!--                Side By Side                  -->
+<!-- ============================================ -->
+
+<section id="sbs-2291">
+  <div class="cs-container">
+    <!-- Left Content Section-->
+    <div class="cs-content">
+      <span class="cs-topper">Featured Service</span>
+      <h2 class="cs-title">Expert New Construction Services</h2>
+      <p class="cs-text">
+        From residential homes to commercial buildings, our new construction services deliver excellence at every step. We combine skilled craftsmanship with modern building techniques to create structures that stand the test of time. Our experienced team ensures your project is completed on time, within budget, and to the highest quality standards.
+      </p>
+      <div class="cs-features">
+        <h3 class="cs-h3">
+          Built on Quality, Delivered with Excellence
+        </h3>
+        <ul class="cs-ul">
+          <li class="cs-li">
+            Professional construction team with proven expertise
+          </li>
+          <li class="cs-li">Comprehensive project management services</li>
+          <li class="cs-li">
+            Superior materials and craftsmanship guaranteed
+          </li>
+        </ul>
+      </div>
+      <a
+        class="cs-button-solid"
+        aria-label="contact us for new construction services"
+        href="/contact"
+        style="color: white"
+        >Get Your Free Estimate »</a
+      >
+    </div>
+    <!-- Right Image Section -->
+    <div class="cs-image-group">
+      <!--Floating Box-->
+      <div class="cs-box">
+        <span class="cs-number">25+</span>
+        <div class="cs-flex">
+          <h3 class="cs-heading">Years of Experience</h3>
+          <span class="cs-desc"
+            >Delivering quality construction projects across Southwest Michigan.</span
+          >
+        </div>
+      </div>
+      <!--Image-->
+      {% image './src/images/company/construction_5.png', 'Commercial construction project', 'cs-picture', 'lazy', '(max-width: 600px) 630px, 630px'%}
+      </picture>
+    </div>
+  </div>
+</section>
