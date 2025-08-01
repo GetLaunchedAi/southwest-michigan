@@ -1,14 +1,14 @@
 ---
-layout: 'base.html'
+layout: "base.html"
 description: "Meta description for the page"
-metaTitle: 'Title that shows up on google searches'
-tagTitle: 'About'
-preloadImg: '/images/cabinets2-1920w.webp'
-preloadCSS: '/css/about.css'
-permalink: 'about/'
+metaTitle: "Title that shows up on google searches"
+tagTitle: "About"
+preloadImg: "/images/company/hero_overlay.png"
+preloadCSS: "/css/about.css"
+permalink: "about/"
 eleventyNavigation:
-    key: About Us
-    order: 200
+  key: About Us
+  order: 200
 ---
 
 <!-- Enter html code below -->
@@ -19,7 +19,8 @@ eleventyNavigation:
 
 <section id="int-hero">
   <h1 id="home-h">About Us</h1>
-  {% image './src/images/cabinets2.jpg', 'cabinets', '', 'lazy', '(max-width: 850px) 850px, 1920px'%}
+  {% image './src/images/company/hero_overlay.png', 'roofing', '', 'lazy',
+  '(max-width: 850px) 850px, 1920px'%}
 </section>
 
 <!-- ============================================ -->
@@ -30,28 +31,55 @@ eleventyNavigation:
   <div class="cs-container">
     <!-- Left Image Section -->
     <div class="cs-left">
-      {% image './src/images/cabinets2.jpg', 'cabinets', 'cs-picture cs-picture1', 'lazy'%}
-      {% image './src/images/construction.jpg', 'house', 'cs-picture cs-picture2', 'lazy'%}
+      {% image './src/images/company/construction.png', 'construction',
+      'cs-picture cs-picture1', 'lazy'%} {% image
+      './src/images/company/erik_morales.png', 'Erik Morales', 'cs-picture
+      cs-picture2', 'lazy'%}
     </div>
     <!-- Right Content Section-->
     <div class="cs-right">
       <span class="cs-topper">About Us</span>
-      <h2 class="cs-title">About Company Title</h2>
+      <h2 class="cs-title">About Southwest Michigan Roofing & Construction</h2>
       <p class="cs-text">
-                In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-            </p>
+        Southwest Michigan Roofing & Construction was officially founded in July
+        2023, but its roots go deeper. Originally launched under a different
+        name as a general construction company, the business was started by a
+        dedicated father-and-son team committed to honest work and reliable
+        service. Over time, we shifted our focus toward what we do
+        best—residential roofing, siding, and exterior construction throughout
+        Kalamazoo, Portage, and surrounding Michigan communities.
+      </p>
       <p class="cs-text">
-                In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-            </p>
+        Backed by a team of highly skilled professionals with years of industry
+        experience, we’ve spent time working as trusted subcontractors for
+        established contractors. Today, we're taking our own name to the
+        forefront—building our brand, earning recognition, and bringing top-tier
+        craftsmanship directly to homeowners and property managers across
+        Southwest Michigan.
+      </p>
       <div class="cs-flex-group">
         <p class="cs-flex-p">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
-                </p>
-        <span class="cs-name">Justin Time</span>
-        <span class="cs-job">CEO-Founder</span>
-        <img class="cs-quote-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="gavel" width="136" height="77">
+          We're a locally owned and operated business driven by strong values,
+          quality results, and long-term client relationships. Our marketing is
+          led by a Michigan State University Construction Management student,
+          blending hands-on construction knowledge with forward-thinking digital
+          strategies. With a growing online presence and a crew that delivers on
+          every promise, we’re confident in one thing—we’re just getting
+          started.
+        </p>
+        <span class="cs-name">Erik Morales</span>
+        <span class="cs-job">Owner</span>
+        <img
+          class="cs-quote-icon"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg"
+          alt="gavel"
+          width="136"
+          height="77"
+        />
       </div>
-      <a href="" class="button-solid">More About Us</a>
+      <a href="/contact" class="button-solid">Get Your Free Estimate Now »</a>
     </div>
   </div>
 </section>
@@ -62,11 +90,17 @@ eleventyNavigation:
 
 <section id="cta">
   <div class="container">
-    <h2 class="title">Get It Done <br> With Us Today</h2>
+    <h2 class="title">
+      Get It Done <br />
+      With Us Today
+    </h2>
     <p>
-            Say something catchy, informative, and encouraging to click the button to go to the contact page.  I like to add these to the bottom of all pages.
-        </p>
-    <a href="/contact.html" class="button-solid">Free Estimate</a>
+      Ready to protect your home with expert roofing or exterior work? Our team
+      at Southwest Michigan Roofing & Construction is here to deliver quality
+      you can count on.
+    </p>
+    <a href="/contact" class="button-solid">Get Your Free Estimate Now »</a>
   </div>
-  {% image './src/images/cabinets2.jpg', 'kitchen cabinets', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920'%}
+  {% image './src/images/company/footer_img.png', 'kitchen cabinets', '',
+  'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
 </section>
