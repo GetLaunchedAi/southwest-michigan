@@ -936,6 +936,9 @@
     width: 100%;
     object-fit: cover;
   }
+  #services-563 .desktop-only {
+    display: none;
+  }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
@@ -955,6 +958,9 @@
   #services-563 .cs-content {
     width: 45%;
     max-width: 32.5rem;
+  }
+  #services-563 .desktop-only {
+    display: block;
   }
 }
 /* Desktop - 1280px */
