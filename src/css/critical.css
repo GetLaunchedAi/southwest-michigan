@@ -451,6 +451,8 @@
   }
   #services-1852 .cs-picture {
     position: absolute;
+    border-radius: 0.75rem;
+    overflow: hidden;
   }
   #services-1852 .cs-picture img {
     width: 100%;
