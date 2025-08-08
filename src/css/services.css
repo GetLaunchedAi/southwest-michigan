@@ -808,6 +808,10 @@
   #services-563 {
     padding: var(--sectionPadding);
   }
+  #services-563 .cs-image-group {
+    width: 100%;
+    height: 100%;
+  }
   #services-563 .cs-container {
     width: 100%;
     /* changes to 1280px at tablet */
@@ -951,6 +955,13 @@
   #services-563 .cs-content {
     width: 45%;
     max-width: 32.5rem;
+  }
+}
+/* Desktop - 1280px */
+@media only screen and (min-width: 80rem) {
+  #services-563 .cs-image-group {
+    width: auto;
+    height: auto;
   }
 }
 /* Dark Mode */
