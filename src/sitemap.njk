@@ -1,0 +1,24 @@
+---
+permalink: /sitemap.xml
+layout: null
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{% for page in collections.all %}
+  {% if page.data.sitemap !== false and page.url.indexOf('/admin/') === -1 %}
+  <url>
+    <loc>{{ page.url | absoluteUrl(metadata.url) }}</loc>
+    {% if page.data.sitemap.lastmod %}
+    <lastmod>{{ page.data.sitemap.lastmod }}</lastmod>
+    {% endif %}
+    {% if page.data.sitemap.changefreq %}
+    <changefreq>{{ page.data.sitemap.changefreq }}</changefreq>
+    {% endif %}
+    {% if page.data.sitemap.priority %}
+    <priority>{{ page.data.sitemap.priority }}</priority>
+    {% endif %}
+  </url>
+  {% endif %}
+{% endfor %}
+</urlset>

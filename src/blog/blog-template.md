@@ -11,5 +11,9 @@ tags:
   - featured
 image: /images/blog/landing.jpg
 imageAlt: Kitchen
+sitemap:
+  priority: 0.6
+  changefreq: monthly
+  lastmod: 2022-12-16
 ---
 His etudes and concertos are performed by the world’s leading pianists, and they are famed for their difficulty. Not to mention the International Chopin Piano Competition, an annual affair in Warsaw that springboards the careers of many famous pianists

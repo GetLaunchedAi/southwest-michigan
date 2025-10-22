@@ -1,5 +1,6 @@
 // imports for the various eleventy plugins (navigation & image)
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const sitemapPlugin = require("@quasibit/eleventy-plugin-sitemap");
 const { DateTime } = require("luxon");
 const Image = require("@11ty/eleventy-img");
 const path = require("path");
@@ -59,6 +60,24 @@ async function imageShortcode(
 module.exports = function (eleventyConfig) {
   // adds the navigation plugin for easy navs
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
+
+  // adds the sitemap plugin for SEO
+  eleventyConfig.addPlugin(sitemapPlugin, {
+    sitemap: {
+      hostname: "https://southwestmichiganroofingandconstructionllc.com",
+      exclude: ["/admin/**/*"]
+    }
+  });
+
+  // add absoluteUrl filter for sitemap
+  eleventyConfig.addFilter("absoluteUrl", function(url, base) {
+    try {
+      return new URL(url, base).toString();
+    } catch (e) {
+      console.warn("Trying to convert %o to be an absolute URL with base %o. Failed, returning: %o (invalid url)", url, base, url);
+      return url;
+    }
+  });
 
   // allows css, assets, robots.txt and CMS config files to be passed into /public
   eleventyConfig.addPassthroughCopy("./src/css/**/*.css");
